@@ -75,9 +75,10 @@ curl -i http://localhost:8080/customer/A01
 
 Verify that it is returning the customer data in JSON format
 
-```
+[source,json]
+----
 [{"CUSTOMERID":"A01","VIPSTATUS":"Diamond","BALANCE":1000}]
-```
+----
 
 Stop the application.
 

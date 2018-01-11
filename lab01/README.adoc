@@ -136,6 +136,7 @@ image::13-log.png[]
 
 Before we start the application, add the database driver dependency in the *pom.xml* file
 
+[source,xml]
 ----
 ...
 <properties>
@@ -169,6 +170,7 @@ In the pop-up windown enter [aqua]**spring-boot:run** in *Goals* and select **Sk
 image::15-springbootrun.png[]
 
 In your log console, verify that customer data is printed.
-```
+
+----
 customer - [{CUSTOMERID=A01, VIPSTATUS=Diamond, BALANCE=1000}, {CUSTOMERID=A02, VIPSTATUS=Gold, BALANCE=500}]
-```
+----

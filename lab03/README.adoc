@@ -241,15 +241,16 @@ spring.datasource.password = ${mysql.service.password}
 
 Since we will be using MYSQL database, add the driver dependency in **pom.xml** file
 
+[source,xml]
 ----
 <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-jdbc</artifactId>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-jdbc</artifactId>
 </dependency>
 <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <scope>runtime</scope>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <scope>runtime</scope>
 </dependency>
 ----
 
@@ -297,6 +298,8 @@ Example:
 ----
 
 Verify that it is returning customer data in JSON format
+
+[source,json]
 ----
 [{"CUSTOMERID":"A01","VIPSTATUS":"Diamond","BALANCE":1000}]
 ----
