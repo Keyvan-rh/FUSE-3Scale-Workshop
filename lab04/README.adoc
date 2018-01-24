@@ -235,7 +235,7 @@ image::08a-promote-production.png[]
 . Test that APIcast authorizes a valid call to your API, by executing a curl command with your valid developer's `user_key` to the `hostname` that you configured in the previous step:
 
 
-    curl -i "http://customer-api-production.<OPENSHIFT-SERVER-IP>.nip.io:80/myfuselab/customer/all?user_key=YOUR_USER_KEY" --insecure
+    curl -i "http://customer-api-production.<OPENSHIFT-SERVER-IP>.nip.io:80/customer/A01?user_key=YOUR_USER_KEY" --insecure
 
 You should see the following messages:
 
@@ -244,7 +244,7 @@ You should see the following messages:
 . Test that APIcast does not authorize an invalid call to your API.
 
 
-    curl -i "http://customer-api-production.<OPENSHIFT-SERVER-IP>.nip.io:80/myfuselab/customer/all?user_key=INVALID_KEY" --insecure
+    curl -i "http://customer-api-production.<OPENSHIFT-SERVER-IP>.nip.io:80/customer/A01?user_key=INVALID_KEY" --insecure
 
 
 When calling the API endpoint with an invalid key, the following messages appear:
