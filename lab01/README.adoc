@@ -79,6 +79,7 @@ image::06-schemasql.png[]
 Add the following SQL to **schema.sql**
 
 ```
+DROP TABLE IF EXISTS customerdemo;
 CREATE TABLE customerdemo (
 	customerID varchar(10) NOT NULL,
 	vipStatus varchar(10) NOT NULL ,
