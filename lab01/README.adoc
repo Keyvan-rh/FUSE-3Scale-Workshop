@@ -24,7 +24,7 @@ Enter [aqua]**myfuselab** as the project name, and click *Next*
 
 image::projectName.png[]
 
-CAUTION: You MUST select **2.18.1.redhat-000021** as the Camel Version!!
+CAUTION: You MUST select **2.18.1.redhat-000021** as the Camel Version!! on **AWS** image please use **2.18.1.redhat-000015**
 
 image::02-runtime.png[]
 
